@@ -7,7 +7,7 @@ const App = () => {
   const [saved, setSaved] = useState([]); // Stretch: the ids of "saved" movies
   const [movieList, setMovieList] = useState([]);
 
-  useEffect(() => {
+  useEffect(() => { 
     const getMovies = () => {
       axios
         .get('http://localhost:5000/api/movies')
